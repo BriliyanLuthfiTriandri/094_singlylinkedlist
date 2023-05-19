@@ -81,4 +81,14 @@ bool List::listEmpty()
 }
 bool List::delNode(int nim)/*Menghapus node dari dalam list*/
 {
+	Node* current, * previous;
+	if (Search(nim, &previous, &current) == false)
+		return false;
+	previous->next = current->next;
+	if (current == START)
+		START = START->next;
+
+	delete current;
+	return true;
 }
+
