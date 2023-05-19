@@ -35,4 +35,8 @@ void List::addNode()/*Menambah sebuah Node kedalam list*/
 	cout << "\nMasukan Nama: ";
 	cin >> nm;
 
+	Node* nodeBaru = new Node;
+	nodeBaru->noMhs = nim;
+	strcpy_s(nodeBaru->nama, nm);
+
 }
