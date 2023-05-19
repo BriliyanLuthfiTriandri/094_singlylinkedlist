@@ -12,4 +12,6 @@ public:
 
 class List
 {
+	Node* START;
+public:
 };
