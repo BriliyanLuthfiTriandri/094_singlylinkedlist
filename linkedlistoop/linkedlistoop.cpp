@@ -79,3 +79,6 @@ bool List::listEmpty()
 	else
 		return false;
 }
+bool List::delNode(int nim)/*Menghapus node dari dalam list*/
+{
+}
